@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="577.157" height="565.478" viewBox="0 0 577.157 565.478" fill="none">
+<style>
+@media (prefers-reduced-motion: no-preference) {
+  path {
+    stroke-dasharray: 34 22;
+    animation: mesh 6s linear infinite;
+  }
+  path:nth-child(2n) {
+    animation-duration: 9s;
+    animation-direction: reverse;
+  }
+  path:nth-child(3n) {
+    animation-duration: 4.8s;
+  }
+}
+@keyframes mesh { to { stroke-dashoffset: -56; } }
+</style>
+<g>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 16.26 0 1 0 548.70 282.74 A 260.12 16.26 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 272.32 282.74 A 16.26 260.12 0 1 0 304.84 282.74 A 16.26 260.12 0 1 0 272.32 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 32.51 0 1 0 548.70 282.74 A 260.12 32.51 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 256.06 282.74 A 32.51 260.12 0 1 0 321.09 282.74 A 32.51 260.12 0 1 0 256.06 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 48.77 0 1 0 548.70 282.74 A 260.12 48.77 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 239.81 282.74 A 48.77 260.12 0 1 0 337.35 282.74 A 48.77 260.12 0 1 0 239.81 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 65.03 0 1 0 548.70 282.74 A 260.12 65.03 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 223.55 282.74 A 65.03 260.12 0 1 0 353.61 282.74 A 65.03 260.12 0 1 0 223.55 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 81.29 0 1 0 548.70 282.74 A 260.12 81.29 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 207.29 282.74 A 81.29 260.12 0 1 0 369.87 282.74 A 81.29 260.12 0 1 0 207.29 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 97.54 0 1 0 548.70 282.74 A 260.12 97.54 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 191.03 282.74 A 97.54 260.12 0 1 0 386.12 282.74 A 97.54 260.12 0 1 0 191.03 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 113.80 0 1 0 548.70 282.74 A 260.12 113.80 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 174.78 282.74 A 113.80 260.12 0 1 0 402.38 282.74 A 113.80 260.12 0 1 0 174.78 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 130.06 0 1 0 548.70 282.74 A 260.12 130.06 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 158.52 282.74 A 130.06 260.12 0 1 0 418.64 282.74 A 130.06 260.12 0 1 0 158.52 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 146.32 0 1 0 548.70 282.74 A 260.12 146.32 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 142.26 282.74 A 146.32 260.12 0 1 0 434.90 282.74 A 146.32 260.12 0 1 0 142.26 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 162.57 0 1 0 548.70 282.74 A 260.12 162.57 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 126.00 282.74 A 162.57 260.12 0 1 0 451.15 282.74 A 162.57 260.12 0 1 0 126.00 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 178.83 0 1 0 548.70 282.74 A 260.12 178.83 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 109.75 282.74 A 178.83 260.12 0 1 0 467.41 282.74 A 178.83 260.12 0 1 0 109.75 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 195.09 0 1 0 548.70 282.74 A 260.12 195.09 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 93.49 282.74 A 195.09 260.12 0 1 0 483.67 282.74 A 195.09 260.12 0 1 0 93.49 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 211.35 0 1 0 548.70 282.74 A 260.12 211.35 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 77.23 282.74 A 211.35 260.12 0 1 0 499.93 282.74 A 211.35 260.12 0 1 0 77.23 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 227.60 0 1 0 548.70 282.74 A 260.12 227.60 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 60.97 282.74 A 227.60 260.12 0 1 0 516.18 282.74 A 227.60 260.12 0 1 0 60.97 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 243.86 0 1 0 548.70 282.74 A 260.12 243.86 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 44.72 282.74 A 243.86 260.12 0 1 0 532.44 282.74 A 243.86 260.12 0 1 0 44.72 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+<path pathLength="100" d="M 28.46 282.74 A 260.12 260.12 0 1 0 548.70 282.74 A 260.12 260.12 0 1 0 28.46 282.74" fill="none" stroke="white" stroke-width="1.45"/>
+</g>
+</svg>

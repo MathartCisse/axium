@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="585.234" height="585.092" viewBox="0 0 585.234 585.092" fill="none">
+<style>
+@media (prefers-reduced-motion: no-preference) {
+  path {
+    stroke-dasharray: 34 22;
+    animation: mesh 6s linear infinite;
+  }
+  path:nth-child(2n) {
+    animation-duration: 9s;
+    animation-direction: reverse;
+  }
+  path:nth-child(3n) {
+    animation-duration: 4.8s;
+  }
+}
+@keyframes mesh { to { stroke-dashoffset: -56; } }
+</style>
+<g>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 16.82 0 1 0 561.76 292.55 A 269.14 16.82 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 275.80 292.55 A 16.82 269.14 0 1 0 309.44 292.55 A 16.82 269.14 0 1 0 275.80 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 33.64 0 1 0 561.76 292.55 A 269.14 33.64 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 258.97 292.55 A 33.64 269.14 0 1 0 326.26 292.55 A 33.64 269.14 0 1 0 258.97 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 50.46 0 1 0 561.76 292.55 A 269.14 50.46 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 242.15 292.55 A 50.46 269.14 0 1 0 343.08 292.55 A 50.46 269.14 0 1 0 242.15 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 67.29 0 1 0 561.76 292.55 A 269.14 67.29 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 225.33 292.55 A 67.29 269.14 0 1 0 359.90 292.55 A 67.29 269.14 0 1 0 225.33 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 84.11 0 1 0 561.76 292.55 A 269.14 84.11 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 208.51 292.55 A 84.11 269.14 0 1 0 376.72 292.55 A 84.11 269.14 0 1 0 208.51 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 100.93 0 1 0 561.76 292.55 A 269.14 100.93 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 191.69 292.55 A 100.93 269.14 0 1 0 393.55 292.55 A 100.93 269.14 0 1 0 191.69 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 117.75 0 1 0 561.76 292.55 A 269.14 117.75 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 174.87 292.55 A 117.75 269.14 0 1 0 410.37 292.55 A 117.75 269.14 0 1 0 174.87 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 134.57 0 1 0 561.76 292.55 A 269.14 134.57 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 158.05 292.55 A 134.57 269.14 0 1 0 427.19 292.55 A 134.57 269.14 0 1 0 158.05 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 151.39 0 1 0 561.76 292.55 A 269.14 151.39 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 141.22 292.55 A 151.39 269.14 0 1 0 444.01 292.55 A 151.39 269.14 0 1 0 141.22 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 168.21 0 1 0 561.76 292.55 A 269.14 168.21 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 124.40 292.55 A 168.21 269.14 0 1 0 460.83 292.55 A 168.21 269.14 0 1 0 124.40 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 185.04 0 1 0 561.76 292.55 A 269.14 185.04 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 107.58 292.55 A 185.04 269.14 0 1 0 477.65 292.55 A 185.04 269.14 0 1 0 107.58 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 201.86 0 1 0 561.76 292.55 A 269.14 201.86 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 90.76 292.55 A 201.86 269.14 0 1 0 494.47 292.55 A 201.86 269.14 0 1 0 90.76 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 218.68 0 1 0 561.76 292.55 A 269.14 218.68 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 73.94 292.55 A 218.68 269.14 0 1 0 511.30 292.55 A 218.68 269.14 0 1 0 73.94 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 235.50 0 1 0 561.76 292.55 A 269.14 235.50 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 57.12 292.55 A 235.50 269.14 0 1 0 528.12 292.55 A 235.50 269.14 0 1 0 57.12 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 252.32 0 1 0 561.76 292.55 A 269.14 252.32 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 40.30 292.55 A 252.32 269.14 0 1 0 544.94 292.55 A 252.32 269.14 0 1 0 40.30 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+<path pathLength="100" d="M 23.47 292.55 A 269.14 269.14 0 1 0 561.76 292.55 A 269.14 269.14 0 1 0 23.47 292.55" fill="none" stroke="#EFEFEF" stroke-width="1.35"/>
+</g>
+</svg>
