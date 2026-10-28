@@ -60,35 +60,23 @@ const metiers = [
 const realisations = [
   {
     name: "Pynk",
-    image: "/realisations/pynk.jpg",
-    imageAlt: "Visuel produit Pynk, soins menstruels",
-    context: "Marque digitale en quête d’une présence claire et d’un parcours client fluide.",
-    solution: "Site et parcours numériques conçus pour convertir et renforcer l’image de marque.",
-    result: "Une vitrine cohérente, lisible et prête à évoluer avec l’offre.",
+    image: "/realisations/pynk.png",
+    imageAlt: "Capture du site Pynk",
   },
   {
     name: "OFFcam",
-    image: "/realisations/offcam.jpg",
+    image: "/realisations/offcam.png",
     imageAlt: "Capture de l’expérience OFFcam",
-    context: "Projet technologique nécessitant une exécution produit précise et sécurisée.",
-    solution: "Conception et déploiement d’une expérience digitale centrée sur l’usage.",
-    result: "Une solution opérationnelle, stable et adaptée au terrain.",
   },
   {
     name: "Focus Investment Group",
-    image: "/realisations/focus.jpg",
-    imageAlt: "Visuel Focus Investment Group",
-    context: "Groupe d’investissement cherchant une présence digitale à la hauteur de son ambition.",
-    solution: "Plateforme et contenus structurés pour présenter l’offre et rassurer les interlocuteurs.",
-    result: "Une image institutionnelle renforcée et des parcours plus clairs.",
+    image: "/realisations/focus.png",
+    imageAlt: "Capture du site Focus Investment Group",
   },
   {
     name: "Icône by AMFA",
     image: "/realisations/icone.jpg",
     imageAlt: "Icône by AMFA, Diamniadio",
-    context: "Maison de mode souhaitant une expérience digitale élégante et commerciale.",
-    solution: "Expérience web soignée, alignée sur l’identité de la marque et les parcours d’achat.",
-    result: "Une présence en ligne distinctive, pensée pour le récit et la conversion.",
   },
 ];
 
@@ -420,47 +408,27 @@ function Realisations() {
           <h2 className="type-title mt-3 max-w-[18ch] text-[#111a4d]">
             Des projets qui prouvent l’exécution.
           </h2>
-          <p className="mt-4 max-w-2xl text-[15px] leading-[1.55] text-[#67708f]">
-            Quatre missions représentatives de notre approche : contexte, solution et
-            résultat, au service d’organisations qui avancent.
-          </p>
         </div>
         <div className="reveal-stagger mt-8 grid gap-8 md:grid-cols-2">
           {realisations.map((item) => (
             <article
               key={item.name}
-              className="flex flex-col gap-5 border-t border-[#e7e9f2] pt-5"
+              className="flex flex-col gap-4 border-t border-[#e7e9f2] pt-5"
             >
               <div className="overflow-hidden bg-[#151a4a]">
                 <img
                   src={item.image}
                   alt={item.imageAlt}
-                  width={1200}
-                  height={750}
-                  className="aspect-[16/10] h-auto w-full object-cover"
+                  width={1852}
+                  height={977}
+                  className="aspect-[16/10] h-auto w-full object-cover object-top"
                   loading="lazy"
                   decoding="async"
                 />
               </div>
-              <div>
-                <h3 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#111a4d]">
-                  {item.name}
-                </h3>
-                <dl className="mt-4 space-y-3 text-[15px] leading-[1.55]">
-                  <div>
-                    <dt className="text-[11px] tracking-[0.14em] text-[#a6aabc] uppercase">Contexte</dt>
-                    <dd className="mt-1 text-[#67708f]">{item.context}</dd>
-                  </div>
-                  <div>
-                    <dt className="text-[11px] tracking-[0.14em] text-[#a6aabc] uppercase">Solution</dt>
-                    <dd className="mt-1 text-[#67708f]">{item.solution}</dd>
-                  </div>
-                  <div>
-                    <dt className="text-[11px] tracking-[0.14em] text-[#a6aabc] uppercase">Résultat</dt>
-                    <dd className="mt-1 text-[#111a4d]">{item.result}</dd>
-                  </div>
-                </dl>
-              </div>
+              <h3 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#111a4d]">
+                {item.name}
+              </h3>
             </article>
           ))}
         </div>
