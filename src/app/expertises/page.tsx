@@ -81,7 +81,7 @@ export default function ExpertisesPage() {
         current="/expertises"
         eyebrow="Axium Group · Expertises"
         title="Des expertises pour conseiller, construire et sécuriser."
-        text="Les trois métiers clés de l’accueil se détaillent ici avec l’ensemble des pôles, pour une chaîne de valeur complète."
+        text="Les six pôles d’expertise d’Axium Group, pour une chaîne de valeur complète du conseil à l’exécution."
         explore="Explorer nos expertises ↓"
         exploreHref="#poles"
       />

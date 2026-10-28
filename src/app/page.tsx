@@ -26,19 +26,34 @@ const enjeux = [
 
 const metiers = [
   {
+    icon: "/figma/service-compass.svg",
+    title: "Conseil & transformation",
+    text: "Évaluation approfondie, élaboration de stratégies, gestion de projet (PMO) et gouvernance numérique pour transformer vos défis en opportunités.",
+  },
+  {
     icon: "/figma/service-panels.svg",
-    title: "Web & Mobile",
-    text: "Des sites et applications sur mesure pour développer votre visibilité et vendre en ligne.",
+    title: "Produits digitaux",
+    text: "Conception et développement d’applications web et mobiles sur mesure, centrées sur l’expérience utilisateur et la performance.",
   },
   {
     icon: "/figma/service-cloud.svg",
-    title: "Réseau & Cybersécurité",
-    text: "Des infrastructures fiables et protégées, pour une activité qui ne s’arrête jamais.",
+    title: "Réseau, infrastructure & cybersécurité",
+    text: "Architecture et gestion d’infrastructures fiables, avec une protection solide de vos systèmes et de vos données.",
   },
   {
-    icon: "/figma/service-compass.svg",
-    title: "Audit & Conseil",
-    text: "Un diagnostic clair et une feuille de route pour avancer.",
+    icon: "/figma/service-chart.svg",
+    title: "Data, BI & IA",
+    text: "Valorisation de vos données via des plateformes analytiques avancées, des tableaux de bord métier et des solutions d’intelligence artificielle.",
+  },
+  {
+    icon: "/figma/service-bank.svg",
+    title: "Banque & Fintech",
+    text: "Solutions technologiques adaptées aux exigences du secteur financier : conformité, sécurité renforcée et innovation Fintech.",
+  },
+  {
+    icon: "/figma/service-cap.svg",
+    title: "Formation Tech",
+    text: "Programmes de montée en compétences sur mesure pour vos équipes techniques, du développement logiciel aux pratiques DevOps et à la cybersécurité.",
   },
 ];
 
@@ -158,7 +173,6 @@ export default function Home() {
         <Enjeux />
         <Presentation />
         <Metiers />
-        <IaBanner />
         <Realisations />
         <Methode />
         <Benefices />
@@ -355,14 +369,14 @@ function Metiers() {
           <div>
             <p className="kicker">Nos métiers clés</p>
             <h2 className="type-title mt-3 max-w-[16ch] text-[#111a4d]">
-              Trois expertises pour accélérer votre activité.
+              Six expertises pour accélérer votre activité.
             </h2>
           </div>
           <div>
             <p className="text-[15px] leading-[1.55] text-[#67708f]">
-              Conseil, produits digitaux, réseau et cybersécurité, data et IA : nous
-              concevons et opérons les capacités qui sécurisent, digitalisent et
-              accélèrent votre organisation.
+              Conseil, produits digitaux, réseau et cybersécurité, data et IA, banque
+              et fintech, formation : nous concevons et opérons les capacités qui
+              sécurisent, digitalisent et accélèrent votre organisation.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-5">
               <a
@@ -392,21 +406,6 @@ function Metiers() {
             </li>
           ))}
         </ol>
-      </div>
-    </section>
-  );
-}
-
-function IaBanner() {
-  return (
-    <section className="bg-[#f7f5f0] px-5 py-10 md:px-12 xl:px-[88px]">
-      <div className="reveal mx-auto max-w-[1264px] border-l-2 border-[#f28c1e] pl-5 md:pl-8">
-        <p className="kicker">IA & formation</p>
-        <p className="mt-3 max-w-3xl text-[clamp(1.15rem,2vw,1.5rem)] leading-[1.35] font-semibold tracking-[-0.02em] text-[#151a4a]">
-          L’intelligence artificielle intégrée à nos solutions pour automatiser vos
-          tâches répétitives, et des formations pour que vos équipes maîtrisent chaque
-          outil.
-        </p>
       </div>
     </section>
   );
