@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { PageCta } from "@/components/page-cta";
-import { IconSlot } from "@/components/wordmark";
+import { BrandLogo, IconSlot } from "@/components/wordmark";
 
 export const metadata: Metadata = {
   title: "Le Groupe. Axium Group",
   description:
-    "Axium Group et Axium Digital forment une chaîne de valeur cohérente, du Sénégal vers l’international.",
+    "Axium Group, Axium Digital et Axium Bank forment une chaîne de valeur cohérente, du Sénégal vers l’international.",
 };
 
 export default function GroupePage() {
@@ -26,8 +26,8 @@ export default function GroupePage() {
                 </h1>
               </div>
               <p className="hero-follow text-[15px] leading-[1.5] text-[#b9c0e0]">
-                De la stratégie à l’usage, Axium Group et Axium Digital forment une chaîne
-                de valeur cohérente au service des organisations africaines et internationales.
+                De la stratégie à l’usage, Axium Group, Axium Digital et Axium Bank forment une
+                chaîne de valeur cohérente au service des organisations africaines et internationales.
               </p>
             </div>
             <div className="hero-follow mt-8 flex flex-wrap items-center gap-6">
@@ -76,7 +76,7 @@ export default function GroupePage() {
           <div className="mx-auto w-full max-w-[1440px] px-5 md:px-12 xl:px-[88px]">
             <div className="reveal grid items-start gap-6 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-16">
               <div>
-                <p className="kicker">Deux entités, une même exigence</p>
+                <p className="kicker">Nos entités, une même exigence</p>
                 <h2 className="type-title mt-3">
                   La stratégie et l’exécution, dans une même continuité.
                 </h2>
@@ -113,7 +113,9 @@ export default function GroupePage() {
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
                     Concevoir · Déployer · Faire évoluer
                   </p>
-                  <h3 className="type-title mt-3">Axium Digital</h3>
+                  <h3 className="mt-3">
+                    <BrandLogo brand="digital" tone="light" className="md:[&_img]:h-10" />
+                  </h3>
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
@@ -136,6 +138,31 @@ export default function GroupePage() {
                   Voir la page Axium Digital
                   <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
                 </a>
+                </div>
+              </article>
+              <article id="bank" className="grid items-start gap-4 border-t border-white/15 pt-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
+                <div>
+                  <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
+                    Sécuriser · Conformité · Innover
+                  </p>
+                  <h3 className="mt-3">
+                    <BrandLogo brand="bank" tone="light" className="md:[&_img]:h-10" />
+                  </h3>
+                </div>
+                <div>
+                <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
+                  La marque dédiée aux acteurs financiers : parcours digitaux, conformité et
+                  innovation Fintech, dans le cadre d’Axium Group.
+                </p>
+                <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
+                  {[
+                    "Parcours clients et paiements digitaux",
+                    "Conformité, KYC et sécurité renforcée",
+                    "Open banking et API financières",
+                  ].map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
                 </div>
               </article>
             </div>

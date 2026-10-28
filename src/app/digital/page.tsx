@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { PageCta } from "@/components/page-cta";
-import { IconSlot } from "@/components/wordmark";
+import { BrandLogo, IconSlot } from "@/components/wordmark";
 
 export const metadata: Metadata = {
   title: "Axium Digital",
@@ -22,6 +22,7 @@ const pillars = [
   },
   {
     title: "Banque & Fintech",
+    brand: "bank" as const,
     text: "Parcours digitaux, paiements et services financiers sécurisés, pensés pour les contraintes du secteur.",
   },
 ];
@@ -34,10 +35,8 @@ export default function DigitalPage() {
         <section className="bg-[#151a4a] text-white">
           <div className="mx-auto w-full max-w-[1440px] px-5 pt-10 pb-16 md:px-12 lg:pt-14 lg:pb-20 xl:px-[88px]">
             <div className="max-w-3xl">
-              <p className="text-[1.35rem] font-semibold tracking-[-0.03em] text-white">
-                Axium Digital
-              </p>
-              <p className="mt-2 text-sm text-[#ff9f1a]">Une filiale d’Axium Group</p>
+              <BrandLogo brand="digital" tone="light" className="md:[&_img]:h-10" />
+              <p className="mt-3 text-sm text-[#ff9f1a]">Une filiale d’Axium Group</p>
               <h1 className="hero-title type-title mt-4">
                 L’exécution produit du groupe.
               </h1>
@@ -65,9 +64,15 @@ export default function DigitalPage() {
           <div className="reveal mx-auto grid w-full max-w-[1440px] gap-8 px-5 md:px-12 lg:grid-cols-3 xl:px-[88px]">
             {pillars.map((item) => (
               <article key={item.title} className="border-t border-[#d9d4c8] pt-5">
-                <h2 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#151a4a]">
-                  {item.title}
-                </h2>
+                {"brand" in item && item.brand ? (
+                  <h2>
+                    <BrandLogo brand={item.brand} tone="navy" />
+                  </h2>
+                ) : (
+                  <h2 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#151a4a]">
+                    {item.title}
+                  </h2>
+                )}
                 <p className="mt-3 text-[15px] leading-[1.55] text-[#67708f]">{item.text}</p>
               </article>
             ))}

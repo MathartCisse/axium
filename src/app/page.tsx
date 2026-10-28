@@ -4,7 +4,7 @@ import { Header } from "@/components/header";
 import { HeroVideo } from "@/components/hero-video";
 import { SignalCounters } from "@/components/signal-counters";
 import { TechMarquee } from "@/components/tech-marquee";
-import { IconSlot } from "@/components/wordmark";
+import { BrandLogo, IconSlot } from "@/components/wordmark";
 
 const enjeux = [
   {
@@ -291,8 +291,8 @@ function Presentation() {
             Une vision groupe. Une exécution digitale intégrée.
           </h2>
           <p className="mt-4 max-w-md text-[15px] leading-[1.5] text-[#b9c0e0]">
-            De la stratégie à l’usage, Axium Group et Axium Digital forment une chaîne
-            de valeur cohérente au service des organisations africaines et internationales.
+            De la stratégie à l’usage, Axium Group, Axium Digital et Axium Bank forment une
+            chaîne de valeur cohérente au service des organisations africaines et internationales.
           </p>
           <a
             href="/groupe"
@@ -303,8 +303,8 @@ function Presentation() {
           </a>
         </div>
 
-        <div className="reveal-stagger grid gap-8 border-white/15 sm:grid-cols-2 sm:gap-0 sm:divide-x sm:divide-white/15">
-          <article className="sm:pr-7">
+        <div className="reveal-stagger grid gap-8 border-white/15 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-white/15">
+          <article className="lg:pr-7">
             <h3 className="text-[1.65rem] font-semibold tracking-[-0.03em]">Axium Group</h3>
             <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
               Le partenaire stratégique qui aligne vision, gouvernance et capacités
@@ -320,8 +320,10 @@ function Presentation() {
               ))}
             </ul>
           </article>
-          <article id="digital" className="sm:pl-7">
-            <h3 className="text-[1.65rem] font-semibold tracking-[-0.03em]">Axium Digital</h3>
+          <article id="digital" className="lg:px-7">
+            <h3>
+              <BrandLogo brand="digital" tone="light" />
+            </h3>
             <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
               Le moteur d’exécution qui imagine et déploie les produits, plateformes et
               expériences numériques au service des métiers.
@@ -342,6 +344,24 @@ function Presentation() {
               Voir Axium Digital
               <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
             </a>
+          </article>
+          <article id="bank" className="lg:pl-7">
+            <h3>
+              <BrandLogo brand="bank" tone="light" />
+            </h3>
+            <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
+              La marque dédiée aux acteurs financiers : parcours digitaux, conformité et
+              innovation Fintech, dans le cadre d’Axium Group.
+            </p>
+            <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
+              {[
+                "Parcours clients et paiements digitaux",
+                "Conformité, KYC et sécurité renforcée",
+                "Open banking et API financières",
+              ].map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
           </article>
         </div>
       </div>

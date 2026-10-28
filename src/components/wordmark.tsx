@@ -57,3 +57,42 @@ export function IconSlot({
     </span>
   );
 }
+
+const brandLogos = {
+  bank: {
+    light: "/logos/axium-bank-light.png",
+    navy: "/logos/axium-bank-navy.png",
+    label: "Axium Bank",
+  },
+  digital: {
+    light: "/logos/axium-digital-light.png",
+    navy: "/logos/axium-digital-navy.png",
+    label: "Axium Digital",
+  },
+} as const;
+
+export function BrandLogo({
+  brand,
+  tone = "light",
+  className,
+}: {
+  brand: keyof typeof brandLogos;
+  /** `light` = white mark for dark surfaces; `navy` = navy mark for light surfaces */
+  tone?: "light" | "navy";
+  className?: string;
+}) {
+  const logo = brandLogos[brand];
+
+  return (
+    <span className={cn("inline-flex items-center", className)}>
+      <img
+        src={logo[tone]}
+        alt={logo.label}
+        width={1067}
+        height={179}
+        className="h-8 w-auto max-w-full object-contain object-left md:h-9"
+        decoding="async"
+      />
+    </span>
+  );
+}
