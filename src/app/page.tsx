@@ -550,7 +550,7 @@ function Engagement() {
         <img
           alt="Aminata Bineta Bibi NIANG DIOP, CEO d’Axium Group"
           src="/figma/founder.png"
-          className="order-2 h-auto w-full lg:order-1"
+          className="order-2 block h-auto w-full self-end object-contain object-bottom lg:order-1"
         />
         <div className="order-1 pb-2 lg:order-2 lg:pb-14">
           <p className="text-[11px] font-medium tracking-[0.18em] text-[#111a4d] uppercase">Notre engagement</p>

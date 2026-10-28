@@ -66,14 +66,14 @@ export default function EngagementPage() {
         gradient="from-[#080d2d] to-[#080d2d]"
       />
       <main>
-        <section className="bg-[#111a4d] py-16 text-white lg:pt-20 lg:pb-0">
-          <div className="reveal mx-auto grid w-full max-w-[1440px] items-start gap-10 px-5 md:px-12 lg:grid-cols-[304px_minmax(0,1fr)] lg:gap-12 xl:px-[88px]">
+        <section className="bg-[#111a4d] pt-16 text-white lg:pt-20">
+          <div className="reveal mx-auto grid w-full max-w-[1440px] items-end gap-10 px-5 md:px-12 lg:grid-cols-[minmax(0,0.42fr)_minmax(0,1fr)] lg:gap-12 xl:px-[88px]">
             <img
               alt="Aminata Bineta Bibi NIANG DIOP, CEO d’Axium Group"
               src="/figma/founder-conviction.png"
-              className="h-[328px] w-full object-cover lg:w-[304px]"
+              className="order-2 h-auto w-full max-w-[304px] justify-self-start object-contain object-bottom lg:order-1 lg:max-w-none"
             />
-            <div className="grid gap-2 lg:grid-cols-[270px_minmax(0,1fr)] lg:gap-0">
+            <div className="order-1 grid gap-2 pb-10 lg:order-2 lg:grid-cols-[270px_minmax(0,1fr)] lg:gap-0 lg:pb-16">
               <div>
                 <p className="text-[11px] font-semibold text-[#b9c0e0] uppercase">
                   Notre conviction
