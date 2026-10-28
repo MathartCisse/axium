@@ -90,7 +90,9 @@ export default function GroupePage() {
               <article className="grid items-start gap-4 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Aligner · Structurer · Piloter</p>
-                  <h3 className="type-title mt-3">Axium Group</h3>
+                  <h3 className="mt-3">
+                    <BrandLogo brand="group" />
+                  </h3>
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">

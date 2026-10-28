@@ -4,10 +4,10 @@ export function Wordmark({
   size = "nav",
   className,
 }: {
-  size?: "nav" | "footer";
+  size?: "nav" | "footer" | "entity";
   className?: string;
 }) {
-  const scale = size === "footer" ? 1.588 : 1;
+  const scale = size === "footer" ? 1.588 : size === "entity" ? 0.78 : 1;
 
   return (
     <span
@@ -76,11 +76,20 @@ export function BrandLogo({
   tone = "light",
   className,
 }: {
-  brand: keyof typeof brandLogos;
+  brand: "group" | keyof typeof brandLogos;
   /** `light` = white mark for dark surfaces; `navy` = navy mark for light surfaces */
   tone?: "light" | "navy";
   className?: string;
 }) {
+  // Group always reuses the Navbar Wordmark — never invent a separate Group mark.
+  if (brand === "group") {
+    return (
+      <span className={cn("inline-flex items-center", className)}>
+        <Wordmark size="entity" />
+      </span>
+    );
+  }
+
   const logo = brandLogos[brand];
 
   return (

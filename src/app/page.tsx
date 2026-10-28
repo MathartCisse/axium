@@ -305,7 +305,9 @@ function Presentation() {
 
         <div className="reveal-stagger grid gap-8 border-white/15 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-white/15">
           <article className="lg:pr-7">
-            <h3 className="text-[1.65rem] font-semibold tracking-[-0.03em]">Axium Group</h3>
+            <h3>
+              <BrandLogo brand="group" />
+            </h3>
             <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
               Le partenaire stratégique qui aligne vision, gouvernance et capacités
               technologiques pour conduire la transformation dans la durée.
@@ -435,13 +437,13 @@ function Realisations() {
               key={item.name}
               className="flex flex-col gap-4 border-t border-[#e7e9f2] pt-5"
             >
-              <div className="overflow-hidden bg-[#151a4a]">
+              <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-[#151a4a]">
                 <img
                   src={item.image}
                   alt={item.imageAlt}
                   width={1852}
                   height={977}
-                  className="aspect-[16/10] h-auto w-full object-cover object-top"
+                  className="max-h-full max-w-full object-contain object-center"
                   loading="lazy"
                   decoding="async"
                 />
