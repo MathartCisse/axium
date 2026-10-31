@@ -67,8 +67,6 @@ const dimensions = [
   {
     id: "digital",
     brand: "digital" as const,
-    icon: "/figma/icon-workflow.svg",
-    title: "Services et ingénierie technologique",
     positioning: "Ingénierie et services technologiques",
     text: "Axium Digital intervient pour ses clients : elle conseille, conçoit, déploie et sécurise leurs projets numériques.",
     items: [
@@ -82,8 +80,6 @@ const dimensions = [
   {
     id: "bank",
     brand: "bank" as const,
-    icon: "/figma/icon-panels.svg",
-    title: "Création et développement de produits digitaux",
     positioning: "Conception et développement de produits financiers digitaux",
     text: "Axium Bank imagine, construit et fait évoluer ses propres produits, au cœur de l’ambition du groupe dans la finance digitale.",
     items: [
@@ -338,10 +334,10 @@ function Presentation() {
             </p>
             <a
               href="/groupe"
-              className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#ff9f1a]"
+              className="mt-5 inline-flex min-h-11 items-center justify-center gap-2 bg-[#ff9f1a] px-3.5 py-2.5 text-[13px] font-semibold tracking-[-0.01em] text-white"
             >
-              Découvrir notre histoire
-              <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
+              Découvrir le groupe
+              <IconSlot src="/figma/arrow-right-sm.svg" className="size-4" />
             </a>
           </div>
         </div>
@@ -353,15 +349,9 @@ function Presentation() {
               id={dimension.id}
               className="flex flex-col border-t border-white/15 pt-6 lg:px-8 lg:first:pl-0 lg:last:pr-0"
             >
-              <div className="flex items-start gap-3">
-                <IconSlot src={dimension.icon} className="mt-1 size-6" />
-                <h3 className="text-[1.45rem] leading-[1.15] font-semibold tracking-[-0.03em]">
-                  {dimension.title}
-                </h3>
-              </div>
-              <div className="mt-6 flex items-center">
+              <h3 className="flex items-center">
                 <BrandLogo brand={dimension.brand} tone="light" />
-              </div>
+              </h3>
               <p className="mt-4 text-base leading-[1.4] font-semibold text-white">
                 {dimension.positioning}
               </p>
@@ -376,17 +366,6 @@ function Presentation() {
               </ul>
             </article>
           ))}
-        </div>
-
-        <div className="reveal mt-10 grid gap-3 border-t border-white/15 pt-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
-          <p className="text-xl leading-[1.2] font-semibold tracking-[-0.03em]">
-            Complémentaires, sans être&nbsp;identiques.
-          </p>
-          <p className="max-w-xl text-[15px] leading-[1.55] text-[#b9c0e0]">
-            Axium Digital vend son expertise et livre des projets pour ses clients. Axium Bank
-            conçoit et développe ses propres produits financiers digitaux. Deux modèles
-            différents, réunis sous une même gouvernance et une même exigence.
-          </p>
         </div>
       </div>
     </section>
