@@ -459,9 +459,6 @@
   .realisation-card:nth-child(3) {
     --rd: 300ms;
   }
-  .realisation-card:nth-child(4) {
-    --rd: 390ms;
-  }
 
   .realisation-frame {
     position: relative;

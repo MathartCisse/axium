@@ -94,6 +94,12 @@ const dimensions = [
 
 const realisations = [
   {
+    name: "Focus Investment Group",
+    service: "Site institutionnel",
+    image: "/realisations/focus.png",
+    imageAlt: "Capture du site Focus Investment Group",
+  },
+  {
     name: "Pynk",
     service: "Site e-commerce",
     image: "/realisations/pynk.png",
@@ -104,18 +110,6 @@ const realisations = [
     service: "Site vitrine",
     image: "/realisations/offcam.png",
     imageAlt: "Capture de l’expérience OFFcam",
-  },
-  {
-    name: "Focus Investment Group",
-    service: "Site institutionnel",
-    image: "/realisations/focus.png",
-    imageAlt: "Capture du site Focus Investment Group",
-  },
-  {
-    name: "Icône by AMFA",
-    service: "Site immobilier",
-    image: "/realisations/icone-photo.jpg",
-    imageAlt: "Icône by AMFA, Diamniadio",
   },
 ];
 
@@ -439,7 +433,7 @@ function Realisations() {
             Des projets qui prouvent l’exécution.
           </h2>
         </div>
-        <div className="reveal-stagger mt-8 grid gap-x-8 gap-y-10 md:grid-cols-2">
+        <div className="reveal-stagger mt-8 grid gap-x-8 gap-y-10 lg:grid-cols-3">
           {realisations.map((item) => (
             <article key={item.name} className="realisation-card border-t border-[#e7e9f2] pt-5">
               <div className="realisation-frame aspect-[1852/977] overflow-hidden">
