@@ -102,17 +102,6 @@ export default function MethodePage() {
         gradient="from-[#080d2d] to-[#1a2a93]"
       />
       <main>
-        <nav
-          aria-label="Étapes"
-          className="reveal-stagger mx-auto grid w-full max-w-[1440px] gap-6 px-5 py-10 sm:grid-cols-2 md:px-12 lg:grid-cols-4 xl:px-[88px]"
-        >
-          {steps.map((step) => (
-            <a key={step.n} href={`#etape-${step.n}`} className="block">
-              <span className="block text-2xl font-semibold tracking-[-0.03em]">{step.title}</span>
-            </a>
-          ))}
-        </nav>
-
         <section className="py-20 lg:py-28">
           <div className="reveal mx-auto grid w-full max-w-[1440px] items-start gap-6 px-5 md:px-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] lg:gap-16 xl:px-[88px]">
             <div>
@@ -133,7 +122,6 @@ export default function MethodePage() {
           {steps.map((step) => (
             <section
               key={step.n}
-              id={`etape-${step.n}`}
               className="border-t border-[#e7e9f2] py-16 lg:py-20"
             >
               <div className="mx-auto grid w-full max-w-[1440px] items-start gap-8 px-5 md:px-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16 xl:px-[88px]">
