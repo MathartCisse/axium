@@ -28,31 +28,37 @@ const metiers = [
   {
     icon: "/figma/service-compass.svg",
     title: "Conseil & transformation",
+    owner: "digital" as const,
     text: "Évaluation approfondie, élaboration de stratégies, gestion de projet (PMO) et gouvernance numérique pour transformer vos défis en opportunités.",
   },
   {
     icon: "/figma/service-panels.svg",
     title: "Produits digitaux",
+    owner: "digital" as const,
     text: "Conception et développement d’applications web et mobiles sur mesure, centrées sur l’expérience utilisateur et la performance.",
   },
   {
     icon: "/figma/service-cloud.svg",
     title: "Réseau, infrastructure & cybersécurité",
+    owner: "digital" as const,
     text: "Architecture et gestion d’infrastructures fiables, avec une protection solide de vos systèmes et de vos données.",
   },
   {
     icon: "/figma/service-chart.svg",
     title: "Data, BI & IA",
+    owner: "digital" as const,
     text: "Valorisation de vos données via des plateformes analytiques avancées, des tableaux de bord métier et des solutions d’intelligence artificielle.",
   },
   {
     icon: "/figma/service-bank.svg",
     title: "Banque & Fintech",
+    owner: "bank" as const,
     text: "Solutions technologiques adaptées aux exigences du secteur financier : conformité, sécurité renforcée et innovation Fintech.",
   },
   {
     icon: "/figma/service-cap.svg",
     title: "Formation Tech",
+    owner: "digital" as const,
     text: "Programmes de montée en compétences sur mesure pour vos équipes techniques, du développement logiciel aux pratiques DevOps et à la cybersécurité.",
   },
 ];
@@ -288,11 +294,12 @@ function Presentation() {
         <div className="reveal">
           <p className="kicker">Notre identité</p>
           <h2 className="type-title mt-3 max-w-[16ch]">
-            Une vision groupe. Une exécution digitale intégrée.
+            Un groupe. Deux filiales.
           </h2>
           <p className="mt-4 max-w-md text-[15px] leading-[1.5] text-[#b9c0e0]">
-            De la stratégie à l’usage, Axium Group, Axium Digital et Axium Bank forment une
-            chaîne de valeur cohérente au service des organisations africaines et internationales.
+            Axium Group porte la vision et la gouvernance. Ses deux filiales, Axium Digital
+            et Axium Bank, exécutent les métiers : tous les services digitaux d’un côté,
+            la banque et la fintech de l’autre.
           </p>
           <a
             href="/groupe"
@@ -305,36 +312,38 @@ function Presentation() {
 
         <div className="reveal-stagger grid gap-8 border-white/15 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-white/15">
           <article className="lg:pr-7">
-            <h3>
+            <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Holding</p>
+            <h3 className="mt-2">
               <BrandLogo brand="group" />
             </h3>
             <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
-              Le partenaire stratégique qui aligne vision, gouvernance et capacités
-              technologiques pour conduire la transformation dans la durée.
+              La maison mère qui aligne vision, gouvernance et priorités, et pilote ses deux
+              filiales au service des organisations africaines et internationales.
             </p>
             <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
               {[
-                "Conseil de direction et feuille de route",
-                "Architecture, réseau et cybersécurité",
-                "Pilotage de programmes et performance",
+                "Vision groupe et feuille de route",
+                "Gouvernance des filiales Digital et Bank",
+                "Pilotage stratégique et performance",
               ].map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
           </article>
           <article id="digital" className="lg:px-7">
-            <h3>
+            <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Filiale</p>
+            <h3 className="mt-2">
               <BrandLogo brand="digital" tone="light" />
             </h3>
             <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
-              Le moteur d’exécution qui imagine et déploie les produits, plateformes et
-              expériences numériques au service des métiers.
+              La filiale d’exécution qui porte l’ensemble des métiers digitaux — hors banque
+              et fintech — du conseil aux produits, à l’infra, à la data et à la formation.
             </p>
             <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
               {[
-                "Web, mobile et plateformes métier",
-                "Data, automatisation et intelligence artificielle",
-                "Fintech, digitalisation et expérience client",
+                "Conseil, produits web & mobile",
+                "Réseau, infrastructure & cybersécurité",
+                "Data, BI, IA et formation tech",
               ].map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -348,18 +357,19 @@ function Presentation() {
             </a>
           </article>
           <article id="bank" className="lg:pl-7">
-            <h3>
+            <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Filiale</p>
+            <h3 className="mt-2">
               <BrandLogo brand="bank" tone="light" />
             </h3>
             <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
-              La marque dédiée aux acteurs financiers : parcours digitaux, conformité et
-              innovation Fintech, dans le cadre d’Axium Group.
+              La filiale dédiée aux acteurs financiers : banque et fintech uniquement —
+              parcours digitaux, conformité et innovation sectorielle.
             </p>
             <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
               {[
+                "Banque & Fintech",
                 "Parcours clients et paiements digitaux",
-                "Conformité, KYC et sécurité renforcée",
-                "Open banking et API financières",
+                "Conformité, KYC et open banking",
               ].map((item) => (
                 <li key={item}>{item}</li>
               ))}
@@ -379,14 +389,14 @@ function Metiers() {
           <div>
             <p className="kicker">Nos métiers clés</p>
             <h2 className="type-title mt-3 max-w-[16ch] text-[#111a4d]">
-              Six expertises pour accélérer votre activité.
+              Six expertises, portées par nos filiales.
             </h2>
           </div>
           <div>
             <p className="text-[15px] leading-[1.55] text-[#67708f]">
-              Conseil, produits digitaux, réseau et cybersécurité, data et IA, banque
-              et fintech, formation : nous concevons et opérons les capacités qui
-              sécurisent, digitalisent et accélèrent votre organisation.
+              Tous les métiers sont portés par Axium Digital, à l’exception de Banque &amp;
+              Fintech, réservé à Axium Bank. Une répartition claire pour savoir qui
+              conçoit, sécurise et accélère votre organisation.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-5">
               <a
@@ -409,7 +419,10 @@ function Metiers() {
               className="metier-card border-t border-[#e7e9f2] pt-5 transition-transform duration-300"
             >
               <IconSlot src={metier.icon} className="size-14" />
-              <h3 className="mt-4 text-[1.45rem] leading-[1.1] font-semibold tracking-[-0.03em] text-[#111a4d]">
+              <p className="mt-4 text-[11px] tracking-[0.14em] text-[#ff9f1a] uppercase">
+                {metier.owner === "bank" ? "Axium Bank" : "Axium Digital"}
+              </p>
+              <h3 className="mt-2 text-[1.45rem] leading-[1.1] font-semibold tracking-[-0.03em] text-[#111a4d]">
                 {metier.title}
               </h3>
               <p className="mt-3 text-[15px] leading-[1.55] text-[#67708f]">{metier.text}</p>

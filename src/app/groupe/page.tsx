@@ -8,7 +8,7 @@ import { BrandLogo, IconSlot } from "@/components/wordmark";
 export const metadata: Metadata = {
   title: "Le Groupe. Axium Group",
   description:
-    "Axium Group, Axium Digital et Axium Bank forment une chaîne de valeur cohérente, du Sénégal vers l’international.",
+    "Axium Group et ses deux filiales, Axium Digital et Axium Bank : une chaîne de valeur cohérente, du Sénégal vers l’international.",
 };
 
 export default function GroupePage() {
@@ -22,12 +22,13 @@ export default function GroupePage() {
               <div>
                 <p className="hero-kicker kicker">Axium Group</p>
                 <h1 className="hero-title type-title mt-3">
-                  Une vision groupe. Une exécution digitale intégrée.
+                  Un groupe. Deux filiales. Une même exigence.
                 </h1>
               </div>
               <p className="hero-follow text-[15px] leading-[1.5] text-[#b9c0e0]">
-                De la stratégie à l’usage, Axium Group, Axium Digital et Axium Bank forment une
-                chaîne de valeur cohérente au service des organisations africaines et internationales.
+                Axium Group porte la vision et la gouvernance. Axium Digital et Axium Bank,
+                ses deux seules filiales, exécutent les métiers : l’ensemble des services
+                digitaux d’un côté, la banque et la fintech de l’autre.
               </p>
             </div>
             <div className="hero-follow mt-8 flex flex-wrap items-center gap-6">
@@ -78,31 +79,31 @@ export default function GroupePage() {
               <div>
                 <p className="kicker">Nos entités, une même exigence</p>
                 <h2 className="type-title mt-3">
-                  La stratégie et l’exécution, dans une même continuité.
+                  La holding et ses deux filiales, dans une même continuité.
                 </h2>
               </div>
               <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                Une vision partagée, des expertises complémentaires et un accompagnement
-                qui ne s’arrête pas à la livraison.
+                Axium Group ne compte que deux filiales. Axium Digital porte tous les métiers
+                digitaux ; Axium Bank porte exclusivement la banque et la fintech.
               </p>
             </div>
             <div className="reveal-stagger mt-14 grid gap-12">
               <article className="grid items-start gap-4 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
-                  <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Aligner · Structurer · Piloter</p>
+                  <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Holding · Aligner · Piloter</p>
                   <h3 className="mt-3">
                     <BrandLogo brand="group" />
                   </h3>
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                  Le partenaire stratégique qui aligne vision, gouvernance et capacités
-                  technologiques pour conduire la transformation dans la durée.
+                  La maison mère qui fixe le cap, gouverne les filiales et assure la
+                  cohérence de la transformation dans la durée.
                 </p>
                 <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
                   {[
-                    "Conseil et trajectoire de transformation",
-                    "Architecture, gouvernance et priorisation",
+                    "Vision groupe et trajectoire stratégique",
+                    "Gouvernance d’Axium Digital et d’Axium Bank",
                     "Pilotage de programmes et performance",
                   ].map((item) => (
                     <li key={item}>{item}</li>
@@ -113,7 +114,7 @@ export default function GroupePage() {
               <article id="digital" className="grid items-start gap-4 border-t border-white/15 pt-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
-                    Concevoir · Déployer · Faire évoluer
+                    Filiale · Tous les métiers digitaux
                   </p>
                   <h3 className="mt-3">
                     <BrandLogo brand="digital" tone="light" className="md:[&_img]:h-10" />
@@ -121,14 +122,14 @@ export default function GroupePage() {
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                  Le moteur d’exécution qui imagine et déploie les produits, plateformes et
-                  expériences numériques au service des métiers.
+                  Filiale d’exécution : elle porte l’ensemble des métiers du groupe, à
+                  l’exception de la banque et de la fintech.
                 </p>
                 <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
                   {[
-                    "Web, mobile et plateformes métiers",
-                    "Data, automatisation et intelligence artificielle",
-                    "Cloud, cybersécurité et opérations digitales",
+                    "Conseil & transformation, produits web & mobile",
+                    "Réseau, infrastructure, cybersécurité et cloud",
+                    "Data, BI, IA et formation tech",
                   ].map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -145,7 +146,7 @@ export default function GroupePage() {
               <article id="bank" className="grid items-start gap-4 border-t border-white/15 pt-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
-                    Sécuriser · Conformité · Innover
+                    Filiale · Banque & Fintech uniquement
                   </p>
                   <h3 className="mt-3">
                     <BrandLogo brand="bank" tone="light" className="md:[&_img]:h-10" />
@@ -153,13 +154,13 @@ export default function GroupePage() {
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                  La marque dédiée aux acteurs financiers : parcours digitaux, conformité et
-                  innovation Fintech, dans le cadre d’Axium Group.
+                  Filiale dédiée aux acteurs financiers : banque et fintech seulement —
+                  parcours digitaux, conformité et innovation sectorielle.
                 </p>
                 <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
                   {[
-                    "Parcours clients et paiements digitaux",
-                    "Conformité, KYC et sécurité renforcée",
+                    "Banque & Fintech",
+                    "Parcours clients, paiements et KYC",
                     "Open banking et API financières",
                   ].map((item) => (
                     <li key={item}>{item}</li>

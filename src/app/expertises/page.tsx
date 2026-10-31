@@ -8,7 +8,7 @@ import { IconSlot } from "@/components/wordmark";
 export const metadata: Metadata = {
   title: "Expertises",
   description:
-    "Pôles d’expertise Axium Group : web & mobile, réseau et cybersécurité, audit & conseil, data, fintech et formation.",
+    "Pôles d’expertise Axium : métiers Axium Digital (conseil, produits, infra, data, formation) et Axium Bank (banque & fintech).",
 };
 
 const domains = [
@@ -16,6 +16,7 @@ const domains = [
     n: "01",
     icon: "/figma/service-compass.svg",
     title: "Conseil & transformation",
+    owner: "digital" as const,
     scope: "Audit & Conseil · Digitalisation",
     text: "Évaluation approfondie, élaboration de stratégies, gestion de projet (PMO) et gouvernance numérique pour transformer vos défis en opportunités. Nous relions diagnostic et digitalisation pour construire un cap cohérent avec votre organisation.",
     skills: ["Audit & diagnostic stratégique", "PMO & gouvernance numérique", "Digitalisation des processus"],
@@ -26,6 +27,7 @@ const domains = [
     n: "02",
     icon: "/figma/service-panels.svg",
     title: "Produits digitaux",
+    owner: "digital" as const,
     scope: "Web & Mobile · ERP & Portails B2B",
     text: "Conception et développement d’applications web et mobiles sur mesure, centrées sur l’expérience utilisateur et la performance. Des parcours aux intégrations métiers, chaque choix technique sert un usage concret.",
     skills: ["UX/UI & design de produit", "Développement web & mobile", "Intégration API & microservices", "ERP & portails B2B"],
@@ -36,6 +38,7 @@ const domains = [
     n: "03",
     icon: "/figma/service-cloud.svg",
     title: "Réseau, infrastructure & cybersécurité",
+    owner: "digital" as const,
     scope: "Réseau & Cyber · Cloud & Infogérance",
     text: "Architecture et gestion d’infrastructures fiables, avec une protection solide de vos systèmes et de vos données. Nous articulons le socle technique et les opérations pour soutenir la continuité de l’activité.",
     skills: ["Cloud public, privé & hybride", "Sécurité des systèmes & supervision", "DevOps & supervision applicative", "Réseau & infogérance"],
@@ -46,6 +49,7 @@ const domains = [
     n: "04",
     icon: "/figma/service-chart.svg",
     title: "Data, BI & IA",
+    owner: "digital" as const,
     scope: "Données · Décision · Automatisation",
     text: "Valorisation de vos données via des plateformes analytiques avancées, des tableaux de bord métier et des solutions d’intelligence artificielle. La qualité des données et la lisibilité des indicateurs restent au service de la décision.",
     skills: ["Data engineering & gouvernance", "Tableaux de bord BI & reporting", "IA générative & modèles prédictifs"],
@@ -56,6 +60,7 @@ const domains = [
     n: "05",
     icon: "/figma/service-bank.svg",
     title: "Banque & Fintech",
+    owner: "bank" as const,
     scope: "Services financiers · Parcours digitaux",
     text: "Solutions technologiques adaptées aux exigences du secteur financier : conformité, sécurité renforcée et innovation Fintech. Nous mettons en cohérence les parcours et les échanges entre systèmes.",
     skills: ["Systèmes de paiement & parcours digitaux", "Conformité RGPD & KYC", "Open banking & API financières"],
@@ -66,6 +71,7 @@ const domains = [
     n: "06",
     icon: "/figma/service-cap.svg",
     title: "Formation Tech",
+    owner: "digital" as const,
     scope: "Compétences · Pratique · Autonomie",
     text: "Programmes de montée en compétences sur mesure pour vos équipes techniques, du développement logiciel aux pratiques DevOps et à la cybersécurité. La formation relie compréhension, pratique et appropriation des outils.",
     skills: ["Formations pratiques & ateliers", "Coaching technique & mentorat", "Parcours cloud, IA & cybersécurité"],
@@ -81,7 +87,7 @@ export default function ExpertisesPage() {
         current="/expertises"
         eyebrow="Axium Group · Expertises"
         title="Des expertises pour conseiller, construire et sécuriser."
-        text="Les six pôles d’expertise d’Axium Group, pour une chaîne de valeur complète du conseil à l’exécution."
+        text="Six pôles : cinq portés par Axium Digital, et Banque & Fintech par Axium Bank — une chaîne de valeur claire du conseil à l’exécution."
         explore="Explorer nos expertises ↓"
         exploreHref="#poles"
       />
@@ -92,8 +98,11 @@ export default function ExpertisesPage() {
               <div className="flex items-start gap-4">
                 <IconSlot src={domain.icon} className="size-14 shrink-0" />
                 <div>
-                  <h2 className="type-title">{domain.title}</h2>
-                  <p className="mt-3 text-[11px] tracking-[0.14em] text-[#ff9f1a] uppercase">{domain.scope}</p>
+                  <p className="text-[11px] tracking-[0.14em] text-[#ff9f1a] uppercase">
+                    {domain.owner === "bank" ? "Axium Bank" : "Axium Digital"}
+                  </p>
+                  <h2 className="type-title mt-2">{domain.title}</h2>
+                  <p className="mt-3 text-[11px] tracking-[0.14em] text-[#a6aabc] uppercase">{domain.scope}</p>
                 </div>
               </div>
               <div>

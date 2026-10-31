@@ -44,8 +44,8 @@ export default function MentionsPage() {
             . WhatsApp : {brand.whatsappDisplay}. Site : {brand.siteLabel}.
           </p>
           <p>
-            Axium Digital est une filiale d’Axium Group dédiée aux produits et
-            plateformes numériques.
+            Axium Group compte deux filiales : Axium Digital (métiers digitaux) et
+            Axium Bank (banque et fintech).
           </p>
           <p>© {brand.year} Axium Group. Tous droits réservés.</p>
         </div>

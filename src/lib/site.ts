@@ -35,9 +35,11 @@ export const about = {
   title: "Du Sénégal à l’international, une expertise sans frontières.",
   body: "Axium Group est une entreprise de transformation numérique ancrée au Sénégal, active dans toute l’Afrique et à l’international. Nous concevons, déployons et maintenons les solutions IT qui font tourner les entreprises au quotidien, avec les exigences des grands groupes internationaux.",
   group:
-    "Conseil, infrastructure, cybersécurité, cloud, ERP, data et formation pour les entreprises de toutes tailles.",
+    "Maison mère d’Axium Digital et d’Axium Bank : vision, gouvernance et pilotage du groupe.",
   digital:
-    "Notre filiale dédiée au digital : sites, applications et plateformes, avec un pôle Banque & Fintech pour les acteurs financiers.",
+    "Filiale d’exécution : tous les métiers digitaux (conseil, produits, infra, data, formation), hors banque et fintech.",
+  bank:
+    "Filiale dédiée à la banque et à la fintech uniquement : parcours, conformité et innovation sectorielle.",
   commitment:
     "Des solutions adaptées à chaque marché, du Sénégal au reste du monde : mobile money, connectivité, énergie et budgets maîtrisés.",
 };
@@ -80,7 +82,8 @@ export type ServiceMode =
   | "Récurrent"
   | "Ponctuel + récurrent"
   | "Sur devis"
-  | "Axium Digital";
+  | "Axium Digital"
+  | "Axium Bank";
 
 export type Service = {
   id: string;
@@ -257,9 +260,9 @@ export const services: Service[] = [
   {
     id: "fintech",
     index: "08",
-    mode: "Axium Digital",
+    mode: "Axium Bank",
     title: "Banque & Fintech",
-    lead: "Avec Axium Digital, nous accompagnons les acteurs financiers dans leurs projets numériques.",
+    lead: "Avec Axium Bank, nous accompagnons les acteurs financiers dans leurs projets numériques.",
     offers: [
       {
         title: "Banques & microfinance",
