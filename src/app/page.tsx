@@ -69,7 +69,6 @@ const dimensions = [
     brand: "digital" as const,
     icon: "/figma/icon-workflow.svg",
     title: "Services et ingénierie technologique",
-    model: "Société de services",
     positioning: "Ingénierie et services technologiques",
     text: "Axium Digital intervient pour ses clients : elle conseille, conçoit, déploie et sécurise leurs projets numériques.",
     items: [
@@ -79,14 +78,12 @@ const dimensions = [
       "Infrastructure et cybersécurité",
       "Digitalisation des organisations",
     ],
-    link: { href: "/digital", label: "Voir Axium Digital" },
   },
   {
     id: "bank",
     brand: "bank" as const,
     icon: "/figma/icon-panels.svg",
     title: "Création et développement de produits digitaux",
-    model: "Société de produits",
     positioning: "Conception et développement de produits financiers digitaux",
     text: "Axium Bank imagine, construit et fait évoluer ses propres produits, au cœur de l’ambition du groupe dans la finance digitale.",
     items: [
@@ -96,7 +93,6 @@ const dimensions = [
       "Conception de produits financiers",
       "Développement d’écosystèmes financiers",
     ],
-    link: { href: "#contact", label: "Échanger avec Axium Bank" },
   },
 ];
 
@@ -331,7 +327,7 @@ function Presentation() {
       <div className="mx-auto max-w-[1264px]">
         <div className="reveal grid items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
           <div>
-            <p className="kicker">Notre identité</p>
+            <p className="kicker">Le groupe</p>
             <h2 className="type-title mt-3 max-w-[16ch]">Un groupe, deux dimensions.</h2>
           </div>
           <div>
@@ -363,11 +359,8 @@ function Presentation() {
                   {dimension.title}
                 </h3>
               </div>
-              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+              <div className="mt-6 flex items-center">
                 <BrandLogo brand={dimension.brand} tone="light" />
-                <span className="border border-[#ff9f1a]/60 px-2 py-1 text-[11px] tracking-[0.14em] text-[#ff9f1a] uppercase">
-                  {dimension.model}
-                </span>
               </div>
               <p className="mt-4 text-base leading-[1.4] font-semibold text-white">
                 {dimension.positioning}
@@ -381,15 +374,6 @@ function Presentation() {
                   </li>
                 ))}
               </ul>
-              {dimension.link ? (
-                <a
-                  href={dimension.link.href}
-                  className="mt-6 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#ff9f1a]"
-                >
-                  {dimension.link.label}
-                  <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
-                </a>
-              ) : null}
             </article>
           ))}
         </div>
