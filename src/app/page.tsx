@@ -195,20 +195,20 @@ function Hero() {
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-6 px-5 pt-[200px] text-left md:px-12 xl:px-[88px]">
           <h1 className="hero-title type-title w-full max-[639px]:!text-[min(3rem,calc((100vw-2.5rem)/7.3))] max-[639px]:!leading-[1.05] min-[640px]:max-xl:!text-[min(4.75rem,calc((100vw-6rem)/16.4))] xl:!text-[min(4.75rem,calc((min(100vw,1440px)-11rem)/16.4))]">
             <span className="max-[639px]:whitespace-normal min-[640px]:whitespace-nowrap">
-              Votre partenaire pour une
+              Des services et
             </span>
             <br />
             <span className="max-[639px]:whitespace-normal min-[640px]:whitespace-nowrap text-[#ff9f1a]">
-              transformation numérique
+              des produits
             </span>
             <br />
             <span className="max-[639px]:whitespace-normal min-[640px]:whitespace-nowrap">
-              maîtrisée
+              faits pour durer
             </span>
           </h1>
           <p className="hero-follow max-w-[732px] text-base leading-[1.65] text-white">
-            Axium Group conçoit, sécurise et opère les écosystèmes numériques qui
-            accélèrent durablement les organisations, du Sénégal vers l’international.
+            Axium Group accompagne les organisations et conçoit ses propres technologies&nbsp;:
+            Axium Digital pour les services, Axium Bank pour les produits fintech.
           </p>
           <div className="hero-follow flex flex-col gap-3.5 sm:flex-row">
             <a
