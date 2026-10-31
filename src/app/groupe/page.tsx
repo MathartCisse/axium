@@ -88,30 +88,7 @@ export default function GroupePage() {
               </p>
             </div>
             <div className="reveal-stagger mt-14 grid gap-12">
-              <article className="grid items-start gap-4 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
-                <div>
-                  <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Holding · Aligner · Piloter</p>
-                  <h3 className="mt-3">
-                    <BrandLogo brand="group" />
-                  </h3>
-                </div>
-                <div>
-                <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                  La maison mère qui fixe le cap, gouverne les filiales et assure la
-                  cohérence de la transformation dans la durée.
-                </p>
-                <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
-                  {[
-                    "Vision groupe et trajectoire stratégique",
-                    "Gouvernance d’Axium Digital et d’Axium Bank",
-                    "Pilotage de programmes et performance",
-                  ].map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-                </div>
-              </article>
-              <article id="digital" className="grid items-start gap-4 border-t border-white/15 pt-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
+              <article id="digital" className="grid items-start gap-4 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
                     Filiale · Tous les métiers digitaux
