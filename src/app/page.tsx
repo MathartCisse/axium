@@ -310,27 +310,8 @@ function Presentation() {
           </a>
         </div>
 
-        <div className="reveal-stagger grid gap-8 border-white/15 lg:grid-cols-3 lg:gap-0 lg:divide-x lg:divide-white/15">
-          <article className="lg:pr-7">
-            <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Holding</p>
-            <h3 className="mt-2">
-              <BrandLogo brand="group" />
-            </h3>
-            <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
-              La maison mère qui aligne vision, gouvernance et priorités, et pilote ses deux
-              filiales au service des organisations africaines et internationales.
-            </p>
-            <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
-              {[
-                "Vision groupe et feuille de route",
-                "Gouvernance des filiales Digital et Bank",
-                "Pilotage stratégique et performance",
-              ].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
-          <article id="digital" className="lg:px-7">
+        <div className="reveal-stagger grid gap-8 border-white/15 lg:grid-cols-2 lg:gap-0 lg:divide-x lg:divide-white/15">
+          <article id="digital" className="lg:pr-7">
             <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Filiale</p>
             <h3 className="mt-2">
               <BrandLogo brand="digital" tone="light" />
