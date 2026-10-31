@@ -64,9 +64,9 @@ export function Header({
 
   return (
     <>
-      {overlay ? null : <div className="h-16" aria-hidden />}
+      {overlay ? null : <div className="h-[84px]" aria-hidden />}
       <header
-        className={`site-header fixed inset-x-0 top-0 z-40 text-white ${
+        className={`site-header fixed inset-x-0 top-0 z-40 pt-5 text-white ${
           solid ? "is-raised bg-[#080d2d]/95 backdrop-blur-md" : "bg-transparent"
         }`}
       >
@@ -111,9 +111,9 @@ export function Header({
               showCloseButton={false}
               className="h-dvh w-full max-w-none gap-0 border-0 bg-[#080d2d] p-0 text-white shadow-none duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] data-[side=right]:w-full data-[side=right]:border-0 data-[side=right]:shadow-none data-[side=right]:sm:max-w-none sm:max-w-none"
             >
-              <div className="flex h-full flex-col px-6 pt-6 pb-8">
-                <div className="flex items-center justify-between">
-                  <SheetTitle className="text-white">
+              <div className="flex h-full flex-col px-5 pt-5 pb-8 md:px-12">
+                <div className="flex h-16 items-center justify-between">
+                  <SheetTitle className="origin-left scale-[0.82] text-white sm:scale-100">
                     <Wordmark />
                   </SheetTitle>
                   <SheetClose
