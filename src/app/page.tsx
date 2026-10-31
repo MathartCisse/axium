@@ -95,22 +95,26 @@ const dimensions = [
 const realisations = [
   {
     name: "Pynk",
+    service: "Site e-commerce",
     image: "/realisations/pynk.png",
     imageAlt: "Capture du site Pynk",
   },
   {
     name: "OFFcam",
+    service: "Site vitrine",
     image: "/realisations/offcam.png",
     imageAlt: "Capture de l’expérience OFFcam",
   },
   {
     name: "Focus Investment Group",
+    service: "Site institutionnel",
     image: "/realisations/focus.png",
     imageAlt: "Capture du site Focus Investment Group",
   },
   {
     name: "Icône by AMFA",
-    image: "/realisations/icone.jpg",
+    service: "Site immobilier",
+    image: "/realisations/icone-photo.jpg",
     imageAlt: "Icône by AMFA, Diamniadio",
   },
 ];
@@ -435,26 +439,28 @@ function Realisations() {
             Des projets qui prouvent l’exécution.
           </h2>
         </div>
-        <div className="reveal-stagger mt-8 grid gap-8 md:grid-cols-2">
+        <div className="reveal-stagger mt-8 grid gap-x-8 gap-y-10 md:grid-cols-2">
           {realisations.map((item) => (
-            <article
-              key={item.name}
-              className="flex flex-col gap-4 border-t border-[#e7e9f2] pt-5"
-            >
-              <div className="flex aspect-[16/10] items-center justify-center overflow-hidden bg-[#151a4a]">
+            <article key={item.name} className="realisation-card border-t border-[#e7e9f2] pt-5">
+              <div className="realisation-frame aspect-[1852/977] overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.imageAlt}
                   width={1852}
                   height={977}
-                  className="max-h-full max-w-full object-contain object-center"
+                  className="realisation-image size-full object-contain"
                   loading="lazy"
                   decoding="async"
                 />
               </div>
-              <h3 className="text-[1.45rem] font-semibold tracking-[-0.03em] text-[#111a4d]">
-                {item.name}
-              </h3>
+              <div className="realisation-meta mt-4">
+                <h3 className="realisation-title text-[1.45rem] leading-[1.15] font-semibold tracking-[-0.03em] text-[#111a4d]">
+                  {item.name}
+                </h3>
+                <p className="realisation-service mt-1.5 text-[11px] tracking-[0.14em] text-[#ff9f1a] uppercase">
+                  {item.service}
+                </p>
+              </div>
             </article>
           ))}
         </div>

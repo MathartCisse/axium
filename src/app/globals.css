@@ -413,6 +413,19 @@
   }
 }
 
+@keyframes realisation-settle {
+  from {
+    transform: scale(1.08);
+  }
+}
+
+@keyframes realisation-meta {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+}
+
 @keyframes tech-marquee {
   from {
     transform: translateX(0);
@@ -434,6 +447,75 @@
 
   .metier-card:hover {
     transform: translateY(-4px);
+  }
+
+  /* Entrances use `backwards` fill so hover transitions own transform afterwards. */
+  .realisation-card {
+    --rd: 120ms;
+  }
+  .realisation-card:nth-child(2) {
+    --rd: 210ms;
+  }
+  .realisation-card:nth-child(3) {
+    --rd: 300ms;
+  }
+  .realisation-card:nth-child(4) {
+    --rd: 390ms;
+  }
+
+  .realisation-frame {
+    position: relative;
+    transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .realisation-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffffff;
+    transform-origin: top;
+    pointer-events: none;
+  }
+  .realisation-card.is-in .realisation-frame::after {
+    transform: scaleY(0);
+    transition: transform 900ms cubic-bezier(0.65, 0, 0.35, 1) var(--rd);
+  }
+
+  .realisation-image {
+    transition: transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .realisation-card.is-in .realisation-image {
+    animation: realisation-settle 1300ms cubic-bezier(0.16, 0.84, 0.3, 1) var(--rd) backwards;
+  }
+
+  .realisation-title,
+  .realisation-service {
+    transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .realisation-card:not(.is-in) .realisation-title,
+  .realisation-card:not(.is-in) .realisation-service {
+    opacity: 0;
+  }
+  .realisation-card.is-in .realisation-title {
+    animation: realisation-meta 800ms cubic-bezier(0.16, 0.84, 0.3, 1) calc(var(--rd) + 350ms) backwards;
+  }
+  .realisation-card.is-in .realisation-service {
+    animation: realisation-meta 800ms cubic-bezier(0.16, 0.84, 0.3, 1) calc(var(--rd) + 450ms) backwards;
+  }
+
+  @media (hover: hover) {
+    .realisation-card.is-in:hover .realisation-frame {
+      transform: translateY(-6px);
+    }
+    .realisation-card.is-in:hover .realisation-image {
+      transform: scale(1.045);
+    }
+    .realisation-card.is-in:hover .realisation-title {
+      transform: translateX(6px);
+    }
+    .realisation-card.is-in:hover .realisation-service {
+      transform: translateX(6px);
+      transition-delay: 60ms;
+    }
   }
 }
 
