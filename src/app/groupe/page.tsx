@@ -8,7 +8,7 @@ import { BrandLogo, IconSlot } from "@/components/wordmark";
 export const metadata: Metadata = {
   title: "Le Groupe. Axium Group",
   description:
-    "Axium Group et ses deux filiales, Axium Digital et Axium Bank : une chaîne de valeur cohérente, du Sénégal vers l’international.",
+    "Axium Group et ses deux filiales : Axium Digital pour les services et l’ingénierie technologique, Axium Bank pour la conception de produits financiers digitaux.",
 };
 
 export default function GroupePage() {
@@ -22,13 +22,13 @@ export default function GroupePage() {
               <div>
                 <p className="hero-kicker kicker">Axium Group</p>
                 <h1 className="hero-title type-title mt-3">
-                  Un groupe. Deux filiales. Une même exigence.
+                  Un groupe. Deux filiales. Deux modèles complémentaires.
                 </h1>
               </div>
               <p className="hero-follow text-[15px] leading-[1.5] text-[#b9c0e0]">
-                Axium Group porte la vision et la gouvernance. Axium Digital et Axium Bank,
-                ses deux seules filiales, exécutent les métiers : l’ensemble des services
-                digitaux d’un côté, la banque et la fintech de l’autre.
+                Axium Group porte la vision et la gouvernance. Axium Digital met son
+                ingénierie au service des organisations ; Axium Bank conçoit et développe
+                les propres produits financiers digitaux du groupe.
               </p>
             </div>
             <div className="hero-follow mt-8 flex flex-wrap items-center gap-6">
@@ -61,8 +61,9 @@ export default function GroupePage() {
                 supplémentaire.
               </p>
               <p>
-                Axium Group conçoit, sécurise et opère les écosystèmes numériques qui
-                accélèrent durablement les organisations, du Sénégal vers l’international.
+                Axium Group accompagne les organisations dans leur transformation numérique
+                et développe ses propres produits technologiques, avec une ambition forte
+                dans la finance digitale.
               </p>
               <p>
                 Notre logique : relier les enjeux de l’organisation, les choix
@@ -79,19 +80,20 @@ export default function GroupePage() {
               <div>
                 <p className="kicker">Nos entités, une même exigence</p>
                 <h2 className="type-title mt-3">
-                  La holding et ses deux filiales, dans une même continuité.
+                  Des services d’un côté, des produits de l’autre.
                 </h2>
               </div>
               <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                Axium Group ne compte que deux filiales. Axium Digital porte tous les métiers
-                digitaux ; Axium Bank porte exclusivement la banque et la fintech.
+                Axium Group ne compte que deux filiales, aux modèles distincts. Axium Digital
+                est une société de services : elle livre des projets pour ses clients. Axium
+                Bank est une société de produits : elle crée ses propres solutions financières.
               </p>
             </div>
             <div className="reveal-stagger mt-14 grid gap-12">
               <article id="digital" className="grid items-start gap-4 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
-                    Filiale · Tous les métiers digitaux
+                    Société de services · Ingénierie et services technologiques
                   </p>
                   <h3 className="mt-3">
                     <BrandLogo brand="digital" tone="light" className="md:[&_img]:h-10" />
@@ -99,14 +101,16 @@ export default function GroupePage() {
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                  Filiale d’exécution : elle porte l’ensemble des métiers du groupe, à
-                  l’exception de la banque et de la fintech.
+                  Axium Digital intervient pour ses clients : elle conseille, conçoit,
+                  déploie et sécurise leurs projets numériques.
                 </p>
                 <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
                   {[
-                    "Conseil & transformation, produits web & mobile",
-                    "Réseau, infrastructure, cybersécurité et cloud",
-                    "Data, BI, IA et formation tech",
+                    "Conseil et transformation numérique",
+                    "Développement web et mobile",
+                    "Data et intelligence artificielle",
+                    "Infrastructure et cybersécurité",
+                    "Digitalisation des organisations",
                   ].map((item) => (
                     <li key={item}>{item}</li>
                   ))}
@@ -123,7 +127,7 @@ export default function GroupePage() {
               <article id="bank" className="grid items-start gap-4 border-t border-white/15 pt-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">
                 <div>
                   <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">
-                    Filiale · Banque & Fintech uniquement
+                    Société de produits · Produits financiers digitaux
                   </p>
                   <h3 className="mt-3">
                     <BrandLogo brand="bank" tone="light" className="md:[&_img]:h-10" />
@@ -131,14 +135,16 @@ export default function GroupePage() {
                 </div>
                 <div>
                 <p className="text-[15px] leading-[1.5] text-[#b9c0e0]">
-                  Filiale dédiée aux acteurs financiers : banque et fintech seulement —
-                  parcours digitaux, conformité et innovation sectorielle.
+                  Axium Bank conçoit et développe ses propres produits financiers
+                  digitaux, au cœur de l’ambition du groupe dans la finance digitale.
                 </p>
                 <ul className="mt-6 space-y-2 text-[15px] leading-[1.5] text-[#e8eaf5]">
                   {[
-                    "Banque & Fintech",
-                    "Parcours clients, paiements et KYC",
-                    "Open banking et API financières",
+                    "Innovation Fintech",
+                    "Solutions de paiement",
+                    "Services financiers numériques",
+                    "Conception de produits financiers",
+                    "Développement d’écosystèmes financiers",
                   ].map((item) => (
                     <li key={item}>{item}</li>
                   ))}

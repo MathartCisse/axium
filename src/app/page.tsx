@@ -53,13 +53,50 @@ const metiers = [
     icon: "/figma/service-bank.svg",
     title: "Banque & Fintech",
     owner: "bank" as const,
-    text: "Solutions technologiques adaptées aux exigences du secteur financier : conformité, sécurité renforcée et innovation Fintech.",
+    text: "Conception et développement de produits financiers digitaux : solutions de paiement, services financiers numériques et innovation Fintech.",
   },
   {
     icon: "/figma/service-cap.svg",
     title: "Formation Tech",
     owner: "digital" as const,
     text: "Programmes de montée en compétences sur mesure pour vos équipes techniques, du développement logiciel aux pratiques DevOps et à la cybersécurité.",
+  },
+];
+
+const dimensions = [
+  {
+    id: "digital",
+    brand: "digital" as const,
+    icon: "/figma/icon-workflow.svg",
+    title: "Services et ingénierie technologique",
+    model: "Société de services",
+    positioning: "Ingénierie et services technologiques",
+    text: "Axium Digital intervient pour ses clients : elle conseille, conçoit, déploie et sécurise leurs projets numériques.",
+    items: [
+      "Conseil et transformation numérique",
+      "Développement web et mobile",
+      "Data et intelligence artificielle",
+      "Infrastructure et cybersécurité",
+      "Digitalisation des organisations",
+    ],
+    link: { href: "/digital", label: "Voir Axium Digital" },
+  },
+  {
+    id: "bank",
+    brand: "bank" as const,
+    icon: "/figma/icon-panels.svg",
+    title: "Création et développement de produits digitaux",
+    model: "Société de produits",
+    positioning: "Conception et développement de produits financiers digitaux",
+    text: "Axium Bank imagine, construit et fait évoluer ses propres produits, au cœur de l’ambition du groupe dans la finance digitale.",
+    items: [
+      "Innovation Fintech",
+      "Solutions de paiement",
+      "Services financiers numériques",
+      "Conception de produits financiers",
+      "Développement d’écosystèmes financiers",
+    ],
+    link: { href: "#contact", label: "Échanger avec Axium Bank" },
   },
 ];
 
@@ -193,36 +230,37 @@ function Hero() {
       />
       <div className="relative z-10">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start gap-6 px-5 pt-[200px] text-left md:px-12 xl:px-[88px]">
-          <h1 className="hero-title type-title w-full max-[639px]:!text-[min(3rem,calc((100vw-2.5rem)/7.3))] max-[639px]:!leading-[1.05] min-[640px]:max-xl:!text-[min(4.75rem,calc((100vw-6rem)/16.4))] xl:!text-[min(4.75rem,calc((min(100vw,1440px)-11rem)/16.4))]">
+          <h1 className="hero-title type-title w-full max-[639px]:!text-[min(3rem,calc((100vw-2.5rem)/7.7))] max-[639px]:!leading-[1.05] min-[640px]:max-xl:!text-[min(4.75rem,calc((100vw-6rem)/16.4))] xl:!text-[min(4.75rem,calc((min(100vw,1440px)-11rem)/16.4))]">
             <span className="max-[639px]:whitespace-normal min-[640px]:whitespace-nowrap">
-              Des services et
+              Nous concevons
             </span>
             <br />
             <span className="max-[639px]:whitespace-normal min-[640px]:whitespace-nowrap text-[#ff9f1a]">
-              des produits
+              la technologie qui&nbsp;transforme
             </span>
             <br />
             <span className="max-[639px]:whitespace-normal min-[640px]:whitespace-nowrap">
-              faits pour durer
+              les usages et façonne demain.
             </span>
           </h1>
           <p className="hero-follow max-w-[732px] text-base leading-[1.65] text-white">
-            Axium Group accompagne les organisations et conçoit ses propres technologies&nbsp;:
-            Axium Digital pour les services, Axium Bank pour les produits fintech.
+            Axium Group accompagne les organisations dans leur transformation numérique et
+            développe ses propres produits technologiques, avec une ambition forte dans la
+            finance&nbsp;digitale.
           </p>
           <div className="hero-follow flex flex-col gap-3.5 sm:flex-row">
             <a
-              href="#contact"
+              href="/groupe"
               className="inline-flex min-h-11 items-center justify-center gap-2 bg-[#ff9f1a] px-3.5 py-2.5 text-[13px] font-semibold tracking-[-0.01em] text-white"
             >
-              Parlons de votre projet
-              <IconSlot src="/figma/arrow-up-right.svg" className="size-[18px]" />
+              Découvrir le groupe
+              <IconSlot src="/figma/arrow-right-sm.svg" className="size-4" />
             </a>
             <a
-              href="#metiers"
+              href="#realisations"
               className="inline-flex min-h-11 items-center justify-center gap-2 text-sm text-white"
             >
-              Découvrir nos expertises
+              Explorer nos réalisations
               <IconSlot src="/figma/arrow-down.svg" className="size-[17px]" />
             </a>
           </div>
@@ -290,72 +328,81 @@ function Enjeux() {
 function Presentation() {
   return (
     <section id="groupe" className="bg-[#111a4d] px-5 py-14 text-white md:px-12 lg:py-16 xl:px-[88px]">
-      <div className="mx-auto grid max-w-[1264px] items-start gap-8 lg:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] lg:gap-14">
-        <div className="reveal">
-          <p className="kicker">Notre identité</p>
-          <h2 className="type-title mt-3 max-w-[16ch]">
-            Un groupe. Deux filiales.
-          </h2>
-          <p className="mt-4 max-w-md text-[15px] leading-[1.5] text-[#b9c0e0]">
-            Axium Group porte la vision et la gouvernance. Ses deux filiales, Axium Digital
-            et Axium Bank, exécutent les métiers : tous les services digitaux d’un côté,
-            la banque et la fintech de l’autre.
-          </p>
-          <a
-            href="/groupe"
-            className="mt-6 inline-flex min-h-11 items-center gap-2 bg-[#ff9f1a] px-3.5 py-2.5 text-[13px] font-semibold tracking-[-0.01em] text-white"
-          >
-            Découvrir notre histoire
-            <IconSlot src="/figma/arrow-right-sm.svg" className="size-4" />
-          </a>
-        </div>
-
-        <div className="reveal-stagger grid gap-8 border-white/15 lg:grid-cols-2 lg:gap-0 lg:divide-x lg:divide-white/15">
-          <article id="digital" className="lg:pr-7">
-            <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Filiale</p>
-            <h3 className="mt-2">
-              <BrandLogo brand="digital" tone="light" />
-            </h3>
-            <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
-              La filiale d’exécution qui porte l’ensemble des métiers digitaux — hors banque
-              et fintech — du conseil aux produits, à l’infra, à la data et à la formation.
+      <div className="mx-auto max-w-[1264px]">
+        <div className="reveal grid items-end gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
+          <div>
+            <p className="kicker">Notre identité</p>
+            <h2 className="type-title mt-3 max-w-[16ch]">Un groupe, deux dimensions.</h2>
+          </div>
+          <div>
+            <p className="max-w-xl text-[15px] leading-[1.55] text-[#b9c0e0]">
+              Axium Group met son ingénierie au service des organisations et crée ses propres
+              produits digitaux. Chaque dimension est portée par une filiale dédiée, avec son
+              propre modèle.
             </p>
-            <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
-              {[
-                "Conseil, produits web & mobile",
-                "Réseau, infrastructure & cybersécurité",
-                "Data, BI, IA et formation tech",
-              ].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
             <a
-              href="/digital"
-              className="mt-5 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#ff9f1a]"
+              href="/groupe"
+              className="mt-4 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#ff9f1a]"
             >
-              Voir Axium Digital
+              Découvrir notre histoire
               <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
             </a>
-          </article>
-          <article id="bank" className="lg:pl-7">
-            <p className="text-[11px] tracking-[0.16em] text-[#ff9f1a] uppercase">Filiale</p>
-            <h3 className="mt-2">
-              <BrandLogo brand="bank" tone="light" />
-            </h3>
-            <p className="mt-3 text-[15px] leading-[1.5] text-[#b9c0e0]">
-              La filiale dédiée aux acteurs financiers : banque et fintech uniquement —
-              parcours digitaux, conformité et innovation sectorielle.
-            </p>
-            <ul className="mt-4 space-y-1.5 text-sm text-[#e8eaf5]">
-              {[
-                "Banque & Fintech",
-                "Parcours clients et paiements digitaux",
-                "Conformité, KYC et open banking",
-              ].map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
-          </article>
+          </div>
+        </div>
+
+        <div className="reveal-stagger mt-10 grid gap-10 lg:grid-cols-2 lg:gap-0 lg:divide-x lg:divide-white/15">
+          {dimensions.map((dimension) => (
+            <article
+              key={dimension.id}
+              id={dimension.id}
+              className="flex flex-col border-t border-white/15 pt-6 lg:px-8 lg:first:pl-0 lg:last:pr-0"
+            >
+              <div className="flex items-start gap-3">
+                <IconSlot src={dimension.icon} className="mt-1 size-6" />
+                <h3 className="text-[1.45rem] leading-[1.15] font-semibold tracking-[-0.03em]">
+                  {dimension.title}
+                </h3>
+              </div>
+              <div className="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2">
+                <BrandLogo brand={dimension.brand} tone="light" />
+                <span className="border border-[#ff9f1a]/60 px-2 py-1 text-[11px] tracking-[0.14em] text-[#ff9f1a] uppercase">
+                  {dimension.model}
+                </span>
+              </div>
+              <p className="mt-4 text-base leading-[1.4] font-semibold text-white">
+                {dimension.positioning}
+              </p>
+              <p className="mt-2 text-[15px] leading-[1.55] text-[#b9c0e0]">{dimension.text}</p>
+              <ul className="mt-5 space-y-2.5 text-[15px] leading-[1.4] text-[#e8eaf5]">
+                {dimension.items.map((item) => (
+                  <li key={item} className="flex items-start gap-2.5">
+                    <IconSlot src="/figma/icon-check.svg" className="mt-[3px] size-3.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              {dimension.link ? (
+                <a
+                  href={dimension.link.href}
+                  className="mt-6 inline-flex items-center gap-1.5 text-[13px] font-semibold text-[#ff9f1a]"
+                >
+                  {dimension.link.label}
+                  <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
+                </a>
+              ) : null}
+            </article>
+          ))}
+        </div>
+
+        <div className="reveal mt-10 grid gap-3 border-t border-white/15 pt-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
+          <p className="text-xl leading-[1.2] font-semibold tracking-[-0.03em]">
+            Complémentaires, sans être&nbsp;identiques.
+          </p>
+          <p className="max-w-xl text-[15px] leading-[1.55] text-[#b9c0e0]">
+            Axium Digital vend son expertise et livre des projets pour ses clients. Axium Bank
+            conçoit et développe ses propres produits financiers digitaux. Deux modèles
+            différents, réunis sous une même gouvernance et une même exigence.
+          </p>
         </div>
       </div>
     </section>
@@ -375,9 +422,9 @@ function Metiers() {
           </div>
           <div>
             <p className="text-[15px] leading-[1.55] text-[#67708f]">
-              Tous les métiers sont portés par Axium Digital, à l’exception de Banque &amp;
-              Fintech, réservé à Axium Bank. Une répartition claire pour savoir qui
-              conçoit, sécurise et accélère votre organisation.
+              Les services sont portés par Axium Digital. Banque &amp; Fintech relève
+              d’Axium Bank, qui conçoit ses propres produits financiers digitaux. Une
+              répartition claire entre prestations et produits.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-5">
               <a

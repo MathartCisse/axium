@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     template: "%s | Axium Group",
   },
   description:
-    "Axium Group conçoit, sécurise et opère les écosystèmes numériques qui accélèrent durablement les organisations, du Sénégal vers l’international.",
+    "Axium Group accompagne les organisations dans leur transformation numérique et développe ses propres produits technologiques, avec une ambition forte dans la finance digitale.",
   openGraph: {
     title: "Axium Group | Ingénierie IT, cybersécurité et transformation numérique au Sénégal",
     description:
-      "Axium Group conçoit, sécurise et opère les écosystèmes numériques qui accélèrent durablement les organisations, du Sénégal vers l’international.",
+      "Axium Group accompagne les organisations dans leur transformation numérique et développe ses propres produits technologiques, avec une ambition forte dans la finance digitale.",
     url: "https://axium-three.vercel.app",
     siteName: "Axium Group",
     locale: "fr_FR",
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Axium Group | Transformation numérique maîtrisée",
+    title: "Axium Group | La technologie qui façonne demain",
     description:
-      "Ingénierie IT, cybersécurité et transformation numérique au Sénégal, en Afrique et à l’international.",
+      "Services et ingénierie technologique avec Axium Digital, produits financiers digitaux avec Axium Bank.",
     images: ["/hero/poster.jpg"],
   },
 };

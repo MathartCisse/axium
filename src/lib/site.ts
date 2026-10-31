@@ -3,7 +3,7 @@ export const brand = {
   legalName: "Axium Group",
   digital: "Axium Digital",
   eyebrow: "Sénégal · Afrique · International",
-  tagline: "Votre partenaire pour une transformation numérique maîtrisée",
+  tagline: "Nous concevons la technologie qui transforme les usages et façonne demain.",
   summary:
     "Conseil, infrastructure, cybersécurité, cloud, data et fintech pour les entreprises du Sénégal, d’Afrique et de l’international.",
   site: "https://axiumgroup.org",
@@ -37,9 +37,9 @@ export const about = {
   group:
     "Maison mère d’Axium Digital et d’Axium Bank : vision, gouvernance et pilotage du groupe.",
   digital:
-    "Filiale d’exécution : tous les métiers digitaux (conseil, produits, infra, data, formation), hors banque et fintech.",
+    "Société de services : ingénierie et services technologiques pour les organisations.",
   bank:
-    "Filiale dédiée à la banque et à la fintech uniquement : parcours, conformité et innovation sectorielle.",
+    "Société de produits : conception et développement de produits financiers digitaux.",
   commitment:
     "Des solutions adaptées à chaque marché, du Sénégal au reste du monde : mobile money, connectivité, énergie et budgets maîtrisés.",
 };
