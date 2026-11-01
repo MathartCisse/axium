@@ -234,9 +234,9 @@ function Hero() {
             </span>
           </h1>
           <p className="hero-follow max-w-[732px] text-base leading-[1.65] text-white">
-            Axium Group accompagne les organisations dans leur transformation numérique et
-            développe ses propres produits technologiques, avec une ambition forte dans la
-            finance&nbsp;digitale.
+            Du Sénégal vers le monde, nous mettons la technologie au service des
+            personnes&nbsp;: faire grandir les organisations et rendre la finance digitale
+            accessible à&nbsp;tous.
           </p>
           <div className="hero-follow flex flex-col gap-3.5 sm:flex-row">
             <a
