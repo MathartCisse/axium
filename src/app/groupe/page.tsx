@@ -119,7 +119,7 @@ export default function GroupePage() {
                   href="/digital"
                   className="mt-6 inline-flex items-center gap-2 text-[13px] font-semibold text-[#ff9f1a]"
                 >
-                  Voir la page Axium Digital
+                  Découvrir Axium Digital
                   <IconSlot src="/figma/arrow-amber.svg" className="size-3.5" />
                 </a>
                 </div>
